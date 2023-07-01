@@ -20,6 +20,20 @@ body {
     width: 120px;
     box-shadow: black;
 }
+/* responsive for devies disappears */
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
 
 .img {
     background-color: black;
@@ -32,6 +46,7 @@ div img {
     margin: 17px 10px;
     align-items: center;
     padding: 5px 0px;
+    transition: 0.2s ease;
 }
 
 #cutelry {
@@ -164,4 +179,33 @@ p {
     font-size: 20px;
 }
 
+/* Reponsiveness */
 
+@media screen and (max-width: 900) {
+    div .img{
+        margin: 17px 10px;
+    align-items: center;
+    padding: 5px 0px;
+      transition: top 1s ease 0s;
+      display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+      nav .openMenu {
+        display: block;
+      }
+
+      .shop{
+        padding: 0px 10px;
+        position: relative;
+      }
+
+      .stfood{
+        margin-right: 0px;
+      }
+}

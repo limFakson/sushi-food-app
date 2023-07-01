@@ -2,7 +2,10 @@
     
     body {
         background-image: url(restaurant.png);
+        background-size: cover;
         text-align: center;
+        overflow: hidden;
+        min-height: 100vh;
     }
     
     .content {
@@ -33,9 +36,10 @@
         font-size: 20px;
         border: solid 2px white;
         border-radius: 25px;
-        padding: 20px 60px;
+        padding: 20px 65px;
         margin: 5px;
         cursor: pointer;
+        margin-top: 40px;
     }
     
     a {
@@ -46,4 +50,56 @@
     a:hover {
         color: black;
         text-decoration: none;
+    }
+
+    /* Responsiveness */
+
+    @media screen and (max-width: 900px) {
+         body { 
+            background-repeat: no-repeat;
+            overflow: hidden;
+            
+         }
+        .content{
+            margin: 400px 80px 0px 80px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1{
+            font-size: 48px;
+            padding: 10px;
+        }
+
+        p{
+            font-size: 18px;
+            padding-bottom: 7px;
+        }
+
+        div .button{
+            margin: 10px;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        .content{
+            margin: 200px 0px 0px 0px;
+        }
+
+        h1{
+            font-size: 36px;
+            padding-bottom: 0px;
+        }
+
+        p{
+            font-size: 15px;
+            font-weight: 500;
+            padding-bottom: 20px;
+        }
+
+        div .button{
+            margin-top: 30px;
+            padding: 20px 80px;
+            margin: 10px ;
+        }
     }
